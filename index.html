@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+
+    <title>Todo_App</title>
+    <link rel="stylesheet" href="mystyle.css" />
+  </head>
+  <body>
+    <header>
+      <h1>My To_Dos</h1>
+      <form>
+        <label for="task_input">Task:</label>
+        <input
+          type="text"
+          id="task_input"
+          placeholder="E.g. Build a web app"
+          required
+        />
+        <label for="task_date">Due Date:</label>
+        <input type="date" name="task_date" id="task_date" />
+        <label for="dueTime">Due Time:</label>
+        <input type="time" name="taskTime" id="dueTime" />
+        <label for="task_Description">Description:</label>
+        <textarea
+          name="task_Description"
+          id="task_Description"
+          rows="50"
+          cols="5"
+          wrap="hard"
+        ></textarea>
+        <br />
+        <button type="submit">Add task</button>
+      </form>
+    </header>
+    <main>
+      <section>
+        <h2>List of Task</h2>
+        <ul class="task_list"></ul>
+      </section>
+    </main>
+
+    <script src="dist/bundle.js"></script>
+  </body>
+</html>
